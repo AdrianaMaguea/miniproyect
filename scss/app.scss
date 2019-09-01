@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+
+about-section {
+    @include about-section ();
+
+    background-mediacarousel {
+        @include media-carousel ('../img/ballena.jpg');
+    }
+}
+
+about-text {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    @include desktop () {
+        font-size: 1rem;
+    }
+}
